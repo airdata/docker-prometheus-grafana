@@ -1,5 +1,6 @@
 Prometheus-Grafana
 ========
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/airdata/docker-prometheus-grafana/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/airdata/docker-prometheus-grafana/tree/main)
 
 A monitoring solution for Docker hosts and containers with [Prometheus](https://prometheus.io/), [Grafana](http://grafana.org/), [cAdvisor](https://github.com/google/cadvisor),
 [NodeExporter](https://github.com/prometheus/node_exporter) and alerting with [AlertManager](https://github.com/prometheus/alertmanager).  
