@@ -1,0 +1,19 @@
+version: 2.1 # use CircleCI 2.1
+jobs:
+  build_jenkins:
+    machine: true
+    working_directory: ~/docker-prometheus-grafana
+
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/docker-prometheus-grafana
+      - run:
+          name: Load archived Docker image
+          command: |
+            docker-compose -f docker-compose.yml build
+workflows:
+  version: 2
+  default:
+    jobs:
+      - build_jenkins
